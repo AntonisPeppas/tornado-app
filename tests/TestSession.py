@@ -11,7 +11,6 @@ class TestSession(unittest.TestCase):
     
     def test_weekly_inactivity(self):
         inactive_users = self.session.weekly_inactivity()
-        print(inactive_users)
         self.assertEqual(inactive_users, 3)
     
 
